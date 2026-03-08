@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina Beauty | Soins & Cosmétiques Naturels au Maroc</title>
+    <meta name="description" content="Découvrez Lumina Beauty, votre destination premium pour les soins de la peau, produits de beauté et hygiène au Maroc. Des solutions naturelles pour un éclat durable." />
+    <script>
+      // Protect window.fetch before any modules load
+      try {
+        const originalFetch = window.fetch;
+        Object.defineProperty(window, 'fetch', {
+          get: () => originalFetch,
+          set: () => { console.warn('Ignored attempt to overwrite window.fetch'); },
+          configurable: true,
+        });
+      } catch (e) {
+        console.warn('Could not protect window.fetch:', e);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
